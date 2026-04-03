@@ -1,2 +1,2 @@
 # amarisdeep.github.io
-idk
+i know how to code 
