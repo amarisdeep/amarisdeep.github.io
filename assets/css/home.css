@@ -1,0 +1,108 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1D1D1D; /* new background */
+    color: #ffffffff; /* white */
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
+
+/* --- Header & Navigation --- */
+header {
+    font-size: 24px;
+    background-color: #000000ff; /* black */
+    color: #ffffffff; /* white */
+    padding: 1%;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav { width: 100%; }
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ffffffff; /* white */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffffffff; /* keep text white */
+    background-color: #444444; /* gray box */
+    padding: 5px 10px; /* spacing inside box */
+    border-radius: 5px; /* rounded corners */
+}
+
+
+/* --- Content & Layout --- */
+.content {
+    margin-top: 120px; /* clears the header */
+    max-width: 900px;  /* keeps content centered and neat */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    min-height: 80vh;
+    color: #ffffff; /* white */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* adds breathing space between sections */
+}
+
+
+.linkhai {
+    color: #ffffffff; /* white */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.linkhai:hover {
+    color: #48489fff; /* ocean-twilight */
+    font-size: 30px;
+}
+
+.linkhai:visited {
+    color: #004c98ff; /* steel-azure */
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #000000ff; /* black */
+    color: #ffffffff; /* white */
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+}
+
+/* --- Mobile Optimization --- */
+@media (max-width: 768px) {
+    body { padding-top: 140px; }
+    header { height: auto; padding: 15px 10px; position: fixed; }
+    header nav ul { flex-direction: column; gap: 10px; }
+}
+
